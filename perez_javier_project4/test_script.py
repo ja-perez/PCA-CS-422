@@ -16,7 +16,7 @@ test_data_3 = np.array([[1, 1], [1, 0], [2, 2], [2, 1],
                         [2, 4], [3, 4], [3, 3], [3, 2],
                         [4, 4], [4, 5], [5, 5], [5, 7], [5, 4]])
 
-Z = test_data_1
+Z = test_data_2
 cov = pca.compute_covariance_matrix(Z)
 pcs, L = pca.find_pcs(cov)
 Z_star = pca.project_data(Z, pcs, L)
